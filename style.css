@@ -1,0 +1,245 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0b0f12;
+font-family:'Cinzel',serif;
+color:white;
+overflow-x:hidden;
+}
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
+background:
+radial-gradient(circle at center,#0d1419,#050608);
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 5%;
+background:rgba(0,0,0,.5);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+height:70px;
+}
+
+.logo h1{
+color:#2eff9b;
+}
+
+nav{
+display:flex;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#2eff9b;
+}
+
+.hero{
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero-logo{
+width:250px;
+margin-bottom:30px;
+animation:float 4s infinite ease-in-out;
+}
+
+.hero h2{
+font-size:60px;
+color:#2eff9b;
+text-shadow:0 0 30px #2eff9b;
+}
+
+.hero p{
+margin-top:20px;
+font-size:20px;
+}
+
+.discord-btn{
+margin-top:40px;
+padding:15px 40px;
+background:#2eff9b;
+color:black;
+font-weight:bold;
+border-radius:15px;
+text-decoration:none;
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+margin-bottom:30px;
+color:#2eff9b;
+}
+
+.card{
+background:#121212;
+padding:30px;
+border-radius:20px;
+}
+
+table{
+width:100%;
+}
+
+th{
+color:#2eff9b;
+padding:15px;
+}
+
+td{
+padding:15px;
+text-align:center;
+}
+
+.downloads{
+display:flex;
+gap:20px;
+}
+
+.downloads a{
+background:#2eff9b;
+padding:15px 30px;
+border-radius:10px;
+color:black;
+text-decoration:none;
+font-weight:bold;
+}
+
+.player{
+position:fixed;
+bottom:20px;
+right:20px;
+width:350px;
+background:#111;
+padding:20px;
+border-radius:20px;
+box-shadow:0 0 30px #2eff9b;
+z-index:1000;
+}
+
+.equalizer{
+display:flex;
+align-items:flex-end;
+gap:5px;
+height:40px;
+margin-top:20px;
+}
+
+.equalizer span{
+width:8px;
+background:#2eff9b;
+animation:eq .8s infinite;
+}
+
+.equalizer span:nth-child(2){
+animation-delay:.2s;
+}
+
+.equalizer span:nth-child(3){
+animation-delay:.4s;
+}
+
+.equalizer span:nth-child(4){
+animation-delay:.6s;
+}
+
+.equalizer span:nth-child(5){
+animation-delay:.8s;
+}
+
+.chat{
+padding:80px 10%;
+}
+
+.discord-widget{
+padding:80px 10%;
+}
+
+@keyframes eq{
+
+0%{
+height:10px;
+}
+
+50%{
+height:40px;
+}
+
+100%{
+height:10px;
+}
+
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+@media(max-width:768px){
+
+nav{
+display:none;
+}
+
+.hero h2{
+font-size:35px;
+}
+
+.player{
+width:95%;
+left:10px;
+right:10px;
+}
+
+.downloads{
+flex-direction:column;
+}
+
+}
